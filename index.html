@@ -126,7 +126,7 @@
     
     
     
-            <div tabindex="-1" class="app _3dqpi two" id="app-content">
+            <div tabindex="-1" class="app _3dqpi two" id="app-content" style="display: none;">
     
                 <div class="MZIyP">
                     <div class="_3q4NP k1feT">
@@ -359,9 +359,9 @@
                                     </div>
                                 </button>
     
-                                <div class="_2cLHw">Procurar ou começar uma nova conversa</div>
+                                <div class="_2cLHw" id="input-search-contacts-placeholder">Procurar ou começar uma nova conversa</div>
                                 <label class="_2MSJr">
-                                    <input type="text" class="jN-F5 copyable-text selectable-text" data-tab="2" dir="auto" title="Procurar ou começar uma nova conversa"
+                                    <input type="text" id="input-search-contacts" class="jN-F5 copyable-text selectable-text" data-tab="2" dir="auto" title="Procurar ou começar uma nova conversa"
                                         value="">
                                 </label>
                             </div>
@@ -822,7 +822,7 @@
                                         </div>
                                     </div>
                                     <div class="_9tCEa" id="messages">
-                                        <div class="message">
+                                       <!-- <div class="message">
     
                                             <div class="_3_7SH kNKwo message-in tail">
                                                 <span class="tail-container"></span>
@@ -1110,6 +1110,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        -->
                                     </div>
                                 </div>
                             </div>
@@ -1331,6 +1332,49 @@
         </div>
     </div>
     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" id="img-emoji-default"/>
+    
+    
+
+    <!--<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBs6dVNinN8MQBOv8RLi9eOwX7wZFRCU1M",
+          authDomain: "whatsapp-clone-e6332.firebaseapp.com",
+          projectId: "whatsapp-clone-e6332",
+          storageBucket: "whatsapp-clone-e6332.appspot.com",
+          messagingSenderId: "585742443031",
+          appId: "1:585742443031:web:477307cbce06283b96b252"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+
+
+    -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+
+    <script src="dist/pdf.worker.bundle.js"></script>
+    <script src="dist/app.bundle.js"></script>
+    
+   <!-- <script src="dist/bundle.js"></script>
+
+    <script src="src/util/Format.js"></script>
+    <script src="src/controller/CameraController.js"></script>
+    <script src="src/controller/WhatsAppController.js"></script>
+    <script src="src/app.js"></script>-->
+
 </body>
 
 </html>
